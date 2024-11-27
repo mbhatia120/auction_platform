@@ -1,0 +1,104 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the Product Detail */
+.product-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Product Card Styling */
+.product-card {
+  flex: 1;
+  padding: 20px;
+  margin-right: 20px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.product-card h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.product-price, .current-bid, .highest-bidder {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Bid Section Styling */
+.bid-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.bid-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Loading and Error Text */
+.loading-text, .error-text {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+}
