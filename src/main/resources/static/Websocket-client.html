@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Bid Updates</title>
+</head>
+<body>
+<h1>Live Bid Updates</h1>
+<ul id="bidUpdates"></ul>
+
+<script>
+    const socket = new WebSocket("ws://localhost:8080/hello");
+
+    socket.onmessage = function(event) {
+        const bidList = document.getElementById("bidUpdates");
+        const newBid = document.createElement("li");
+        newBid.textContent = event.data;
+        bidList.appendChild(newBid);
+    };
+
+    socket.onopen = function() {
+        console.log("WebSocket connected.");
+    };
+
+    socket.onclose = function() {
+        console.log("WebSocket disconnected.");
+    };
+</script>
+</body>
+</html>
